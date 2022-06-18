@@ -110,6 +110,14 @@ main{
     text-align: center;
     letter-spacing: 6px;
     font-size: 25px;
+    animation-name: desplazarse;
+    animation-duration: 3s;
+}
+  /*Animacion*/
+  @keyframes desplazarse{
+    0%{
+        transform: translateY(-40px);
+}
 }
 .infoContacto p{
     text-align: center;
@@ -118,6 +126,13 @@ main{
     font-family: 'Roboto', sans-serif;
     margin: 2.5rem 1rem 0rem;
     line-height: 40px;
+    animation: desplazarseX;
+    animation-duration: 2s;
+}
+@keyframes desplazarseX{
+    0%{
+        transform: translateX(25px);
+    }
 }
 .formContacto{
     background-color: #0a0a0ad3;
@@ -189,6 +204,14 @@ main{
     color: #ffffff;
     font-family: 'Roboto', sans-serif;
     letter-spacing: 6px;
+    animation-name: desplazarse;
+    animation-duration: 3s;
+}
+/*animacion*/
+@keyframes desplazarse{
+0%{
+    transform: translateY(-45px);
+}
 }
 .caja1{
     border: #000000 solid 3px;
@@ -225,6 +248,13 @@ main{
     color: #ffffff;
     letter-spacing: 6px;
     font-family: 'Roboto', sans-serif;
+    animation-name: desplazarse;
+    animation-duration: 3s;
+}
+@keyframes desplazarse{
+    0%{
+        transform: translateY(-45px);
+    }
 }
 .ordenar{
     display: flex;
@@ -388,6 +418,14 @@ header{
         margin-top: 14rem;
         color: #ffffff;
         font-family: 'Roboto', sans-serif;
+        animation-name: desplazarse;
+        animation-duration: 3s;
+    }
+    /*Animacion*/
+    @keyframes desplazarse{
+        0%{
+             transform: translateY(-40px);
+          }
     }
     .subtitulo{
         margin-top: 20px;
@@ -455,6 +493,13 @@ header{
         margin-top: 16rem;
         color: #ffffff;
         font-family: 'Roboto', sans-serif;
+        animation-name: desplazarseT;
+        animation-duration: 2s;
+    }
+    @keyframes desplazarseT{
+        0%{
+            transform: translateY(-50px);
+        }
     }
     .subtitulo{
         margin-top: 5rem;
@@ -517,8 +562,12 @@ header{
         border: none;
         font-size: 20px;
     }
+    .lista li a:hover{
+        color: #000000;
+    }
     .lista li :hover{
-        background-color: #5c5c5e;
+        transition: 1s;
+        background-color: #ffffff;
         border-radius: 5px;
     }
 
@@ -540,12 +589,19 @@ header{
     width: 550px;
     cursor: pointer;
 }
+.casa:hover{
+    transition-duration: 1.5s;
+    box-shadow: -1px -1px 26px rgba(0, 0, 0, 0.6);
+    width: 580px;
+    height: 430px;
+}
 .textocasa{
-margin-bottom: 30px;
-color: #ffffff;
-font-family: 'Roboto', sans-serif;
-font-size: 30px;
-letter-spacing: 3px;
+    margin-bottom: 30px;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    letter-spacing: 3px;
+    animation-name: desplazarse;
 }
 /*footer*/
 .textocopy{
@@ -568,13 +624,27 @@ letter-spacing: 3px;
     }
     .tituloPropiedad{
         margin-top: 13rem;
+        animation-name: desplazarse;
+        animation-duration: 3s;
     }
+    @keyframes desplazarse{
+        0%{
+             transform: translateY(-45px);
+    }
+        }
 } 
 @media  (min-width: 750px){
     .tituloPropiedad{
         margin-top: 16rem;
         letter-spacing: 10px;
         font-size: 1.2rem;
+        animation-name: desplazarse;
+        animation-duration: 2s;
+    }
+    @keyframes desplazarse{
+        0%{
+            transform: translateY(-60px);
+        }
     }
     .gridContainerP{
         display: grid;
@@ -605,6 +675,9 @@ letter-spacing: 3px;
         gap: 100px;
         margin: 0px 50px 100px;
     }
+    .propiedades :hover{
+        box-shadow: -1px -1px 26px rgba(0, 0, 0, 0.6);
+    }
     .tituloPropiedad{
         font-size: 25px;
         margin-top: 13rem;
@@ -619,6 +692,11 @@ letter-spacing: 3px;
     .ordenarPropiedades img{
         width: 450px;
         height: 350px;
+    }
+    .ordenarPropiedades img:hover{
+        transition-duration: 1.5s;
+        width: 500px;
+        height: 380px;
     }
 }
 /*contacto*/
@@ -638,6 +716,7 @@ letter-spacing: 3px;
         margin-top: 16rem;
         letter-spacing: 10px;
         font-size: 30px;
+        animation-duration: 2s;
     }
     .infoContacto{
         display: flex;
@@ -719,6 +798,7 @@ letter-spacing: 3px;
         margin-top: 16rem;
         font-size: 3rem;
         letter-spacing: 10px;
+        animation-duration: 2s;
     }
     .caja1{
         margin: 4rem 2rem 1rem 2rem;
@@ -775,6 +855,7 @@ letter-spacing: 3px;
 }
 .tituloTasacion{
     margin-top: 16rem;
+    animation-duration: 2s;
 }
 .ordenar{
     margin: 6rem 0rem;
