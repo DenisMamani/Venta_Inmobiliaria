@@ -19,33 +19,23 @@ main{
 }
 .footer{
     background-color: #eee2e2;
-    padding-bottom: 10px;
-    padding-top: 5px;
     text-align: center;
+    padding: 5px 0px;
     bottom: 0;
     width: 100%;
     box-shadow: #000000 0px 0px 13px 0px;
 }     
 /* HEADER */
-.logo{
-    display: flex;
-    justify-content: center;
-}
 .lista{
     display: flex;
-    justify-content: space-around;
-    padding-top: 10px;
-    padding-bottom: 5px;
-}
-.lista li{
-    display: inline-block;
+    justify-content: end;
+    
 }
 .lista li a{
-    text-decoration:none ;
-    list-style: none;
+    text-decoration: none;
     color: #ffffff;
-    font-family: sans-serif;
-    border-bottom: 1px solid white;
+    font-size: 18px;
+    margin: 0px 30px;
 }
 .cuerpoInicio{
     background-image: url(../img/iniciofondo.png);
@@ -62,11 +52,10 @@ main{
     background-repeat: no-repeat;
     background-size: cover;
 }
-.tituloPropiedad{
-    font-size: 20px;
+.tituloPropiedad h1{
+    font-size: 2rem;
     text-align: center;
-    margin-top: 12rem;
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
     letter-spacing: 6px;
     color: #ffffff;
     font-family: 'Roboto', sans-serif;
@@ -104,12 +93,11 @@ main{
     background-size: cover;
 }
 .tituloContacto{
-    margin-top: 13rem;
+    margin-top: 8rem;
     color: #ffffff;
     font-family: 'Roboto', sans-serif;
     text-align: center;
     letter-spacing: 6px;
-    font-size: 25px;
     animation-name: desplazarse;
     animation-duration: 3s;
 }
@@ -138,8 +126,8 @@ main{
     background-color: #0a0a0ad3;
     text-align: center;
     border-radius: 10px;
-    width: 330px;
-    height: 490px;
+    width: 380px;
+    height: 550px;
     margin: auto;
     padding: 30px;
     margin-top: 70px;
@@ -157,7 +145,7 @@ main{
     font-family: sans-serif;
     font-size: 18px;
     padding: 10px;
-    width: 300px;
+    width: 100%;
     border-radius: 5px;
     margin-bottom: 10px;
     border: 0px;
@@ -168,7 +156,7 @@ main{
     padding: 11px;
     height: 140px;
     font-family: sans-serif;
-    width: 16.5em;;
+    width: 100%;
     border-radius: 5px;
     border: 0px;
     resize: none;
@@ -199,7 +187,7 @@ main{
 }
 .tituloNosotros{
     text-align: center;
-    margin-top: 13rem;
+    margin-top: 8rem;
     font-size: 2.5rem;
     color: #ffffff;
     font-family: 'Roboto', sans-serif;
@@ -241,9 +229,9 @@ main{
     background-repeat: no-repeat;
     background-size: cover;
 }
-.tituloTasacion{
-    margin-top: 13rem;
-    font-size: 30px;
+.tituloTasacion h1{
+    margin-top: 8rem;
+    font-size: 40px;
     text-align: center;
     color: #ffffff;
     letter-spacing: 6px;
@@ -266,13 +254,13 @@ main{
     text-align: center;
     background-color: #0a0a0ad3;
     border-radius: 10px;
-    width: 350px;
-    height: 550px;
+    width: 380px;
+    height: 620px;
     padding: 20px;
     border: solid rgb(255, 255, 255);
 }
 .formTasacion p{
-    font-size: 26px;
+    font-size: 20px;
     font-family: sans-serif;
     color: #FFFFFF;
     margin-bottom: 15px;
@@ -281,7 +269,7 @@ main{
 .dire{
     font-size: 18px;
     border-radius: 5px;
-    width: 86%;
+    width: 100%;
     padding: 10px;
     font-family: sans-serif;
     margin-bottom: 10px;
@@ -290,7 +278,7 @@ main{
 .imgTasacion{
     text-align: center;
     background-color: #111010;
-    width: 300px;
+    width: auto;
     padding: 15px;
     margin-bottom: 3rem;
     border-radius: 100%;
@@ -298,7 +286,7 @@ main{
 }
 .imgTasacion img{
     width: 300px;
-    height: 250px;
+    height: 260px;
 }
 .botonTasacion{
     font-weight: bolder;
@@ -315,14 +303,12 @@ main{
 .redes{
     display: flex;
     justify-content: center;
+    margin: 0;
 }
 .redes li{
     display: inline-block;
     padding-right: 25px;
     padding-left: 25px;
-}
-.redes li a{
-    font-size: 50px;
 }
                 /*RESPONSIVE*/
 header{
@@ -389,18 +375,6 @@ header{
 }
 /*inicio*/
 @media  (max-width: 750px){
-        /*header*/
-        .logo {
-            margin-top: 20px;
-        }
-        .lista{
-            margin-top: 5px;
-            margin-bottom: 5px;
-        }
-        .lista li a{
-            font-family: sans-serif;
-            font-size: 18px;
-        }
     .gridContainerI{
         display: grid;
         grid-template-columns: auto;
@@ -412,14 +386,19 @@ header{
         "footer";
     }
     .texto{
-        font-size: 20px;
-        letter-spacing: 1px;
+        letter-spacing: 2px;
         text-align: center;
-        margin-top: 14rem;
+        margin-top: 8rem;
         color: #ffffff;
         font-family: 'Roboto', sans-serif;
         animation-name: desplazarse;
         animation-duration: 3s;
+    }
+    .titulo{
+        font-size: 30px;
+    }
+    .subtitulo{
+        font-size: 30px;
     }
     /*Animacion*/
     @keyframes desplazarse{
@@ -446,36 +425,19 @@ header{
         margin-bottom: 30px;
         color: #ffffff;
         font-family: 'Roboto', sans-serif;
-        font-size: 35px;
+        font-size: 30px;
         letter-spacing: 3px;
     }
         /*footer*/
         .textocopy{
             letter-spacing: 0.5px;
             margin-top: 10px;
-            margin-bottom: 10px;
             font-size: 20px;
             font-family: 'Roboto', sans-serif;
             color: #000000;
         }
 }
 @media  (min-width: 750px){
-            /*header*/
-            .logo {
-                margin-top: 20px;
-            }
-            .lista{
-                margin-top: 5px;
-                margin-bottom: 5px;
-            }
-            .lista li a{
-                font-family: sans-serif;
-                font-size: 25px;
-            }
-            .logo img{
-                width: 120px;
-                height: 130px;
-            }
     .gridContainerI{
         display: grid;
         grid-template-columns: auto;
@@ -487,10 +449,9 @@ header{
         "footer";
     }
     .texto{
-        font-size: 25px;
         letter-spacing: 4px;
         text-align: center;
-        margin-top: 16rem;
+        margin-top: 8rem;
         color: #ffffff;
         font-family: 'Roboto', sans-serif;
         animation-name: desplazarseT;
@@ -501,8 +462,12 @@ header{
             transform: translateY(-50px);
         }
     }
+    .titulo{
+        font-size: 35px;
+    }
     .subtitulo{
-        margin-top: 5rem;
+        margin-top: 50px;
+        font-size: 35px;
     }
     .ordenarInicio{
         display: flex;
@@ -527,7 +492,7 @@ header{
     .textocopy{
         letter-spacing: 2px;
         margin-top: 10px;
-        margin-bottom: 10px;
+        
         font-size: 25px;
         font-family: 'Roboto', sans-serif;
         color: #000000;
@@ -538,29 +503,10 @@ header{
     }
 }
 @media  (min-width: 1024px){
-    /*header*/
-    .logo{
-        margin-left: 50px;
-    }
-    .logo img{
-        width: 100px;
-        height: 110px;
-    }
-    .lista li{
-        display: inline-block;
-    }
-    .navegar{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 10px 0px 10px;
-        margin-right: 20px;
-    }    
-    .lista li a{
+     .lista li a{
         display: block;
-        padding: 8px 32px;
+        padding: 5px 15px;
         border: none;
-        font-size: 20px;
     }
     .lista li a:hover{
         color: #000000;
@@ -569,14 +515,15 @@ header{
         transition: 1s;
         background-color: #ffffff;
         border-radius: 5px;
-    }
-
+    } 
     .texto{
-        font-size: 30px;
-        color: #ffffff;
         letter-spacing: 6px;
-        margin-top: 13rem;
-        font-family: 'Roboto', sans-serif;
+    }
+    .titulo{
+        font-size: 40px;
+    }
+    .subtitulo{
+        font-size: 40px;
     }
 .ordenarInicio{
     margin: 10rem 10rem;
@@ -596,7 +543,6 @@ header{
     height: 430px;
 }
 .textocasa{
-    margin-bottom: 30px;
     color: #ffffff;
     font-family: 'Roboto', sans-serif;
     font-size: 30px;
@@ -622,10 +568,14 @@ header{
         width: 400px;
         height: 350px;
     }
-    .tituloPropiedad{
-        margin-top: 13rem;
+    .tituloPropiedad h1{
+        font-size: 40px;
+        margin-top: 8rem;
         animation-name: desplazarse;
         animation-duration: 3s;
+    }
+    footer{
+        padding-bottom: auto;
     }
     @keyframes desplazarse{
         0%{
@@ -634,12 +584,12 @@ header{
         }
 } 
 @media  (min-width: 750px){
-    .tituloPropiedad{
-        margin-top: 16rem;
+    .tituloPropiedad h1{
+        margin-top: 8rem; 
         letter-spacing: 10px;
-        font-size: 1.2rem;
         animation-name: desplazarse;
         animation-duration: 2s;
+        font-size: 45px;
     }
     @keyframes desplazarse{
         0%{
@@ -659,7 +609,6 @@ header{
     .propiedades{
         grid-template-columns: repeat(auto-fit, 40rem);
         gap: 50px;
-        margin-bottom: 150px;
     }
     .descPropiedad{
         width: auto; 
@@ -678,9 +627,9 @@ header{
     .propiedades :hover{
         box-shadow: -1px -1px 26px rgba(0, 0, 0, 0.6);
     }
-    .tituloPropiedad{
-        font-size: 25px;
-        margin-top: 13rem;
+    .tituloPropiedad h1{
+        font-size: 50px;
+        margin-top: 9rem;
     }
     .descPropiedad{
         text-align: center;
@@ -690,7 +639,7 @@ header{
         cursor: pointer;
     }
     .ordenarPropiedades img{
-        width: 450px;
+        width: 455px;
         height: 350px;
     }
     .ordenarPropiedades img:hover{
@@ -712,10 +661,10 @@ header{
         "footer";
         grid-template-rows: auto auto auto 1fr auto;
     }
-    .tituloContacto{
-        margin-top: 16rem;
+    .tituloContacto h1{
+        margin-top: 9rem;
         letter-spacing: 10px;
-        font-size: 30px;
+        font-size: 45px;
         animation-duration: 2s;
     }
     .infoContacto{
@@ -728,12 +677,12 @@ header{
     }
     .formContacto{
         width: 430px;
-        height: 590px;
+        height: 650px;
         margin-bottom: 120px;
     }
     .formContacto p{
         font-size: 40px;
-        margin-bottom: 50px;
+        margin-bottom: 25px;
     }
     .datos{
         padding: 15px;
@@ -748,9 +697,8 @@ header{
     }
 }
 @media  (min-width: 1024px){
-    .tituloContacto{
-        font-size: 35px;
-        margin-top: 13rem;
+    .tituloContacto h1{
+        font-size: 50px;
     }
     .infoContacto p{
         font-size: 26px;
@@ -758,7 +706,7 @@ header{
     }
      .formContacto{
         width: 500px;
-        height: 650px;
+        height: 700px;
         margin-bottom: 120px;
     }
     .formContacto p{
@@ -795,7 +743,7 @@ header{
         margin-bottom: 4rem;
     }
     .tituloNosotros{
-        margin-top: 16rem;
+        margin-top: 9rem;
         font-size: 3rem;
         letter-spacing: 10px;
         animation-duration: 2s;
@@ -815,7 +763,7 @@ header{
 @media  (min-width: 1024px){
     .tituloNosotros{
         font-size: 3rem;
-        margin-top: 13rem;
+        margin-top: 10rem;
     }
     .ordenarNosotros{
         display: flex;
@@ -853,8 +801,15 @@ header{
     "formTasacion"
     "footer";
 }
-.tituloTasacion{
-    margin-top: 16rem;
+.datos{
+    width: 100%;
+}
+.textArea{
+    width: 100%;
+}
+.tituloTasacion h1{
+    font-size: 45px;
+    margin-top: 9rem;
     animation-duration: 2s;
 }
 .ordenar{
@@ -862,24 +817,27 @@ header{
 }
 .formTasacion{
     width: 450px;
-    height: 650px;
+    height: 700px;
 }
 .formTasacion p{
     margin-bottom: 25px;
+    font-size: 28px;
 }
 .dire{
     padding: 15px;
-    width: 355px;
+    width: 100%;
 }
 }
 @media  (min-width: 1024px){
     .ordenar{
         flex-direction: row;
-        justify-content: space-evenly;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 220px;
     }
-    .tituloTasacion{
-        font-size: 35px;
-        margin-top: 13rem;
+    .tituloTasacion h1 {
+        font-size: 50px;
+        margin-top: 10rem;
     }
     .imgTasacion{
         width: auto;
@@ -896,9 +854,6 @@ header{
     .formTasacion p{
         font-size: 30px;
         letter-spacing: 2px;
-    }
-    .dire{
-        width: 420px;
     }
     .botonTasacion{
         cursor: pointer;

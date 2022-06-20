@@ -6,78 +6,96 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./img/Logo3.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./style/estilos.css">
     <title>AmiciWeb</title>
 </head>
+
 <body class="cuerpoInicio">
     <div class="gridContainerI">
         <header class="header">
-            <nav class="navegar">
-                <div class="logo">
-                <a href="index.html"><img src="./img/logoblanco.png" alt="AmiciWeb"> </a>
-                </div>   
-                <ul class="lista">
-                    <li> 
-                        <a href="index.html">Inicio</a> 
-                    </li>
-                    <li> 
-                        <a href="./secciones/propiedades.html">Propiedades</a> 
-                    </li>
-                    <li> 
-                        <a href="./secciones/contacto.html">Contacto</a> 
-                    </li>
-                    <li> 
-                        <a href="./secciones/nosotros.html">Sobre Nosotros</a> 
-                    </li>
-                    <li> 
-                        <a href="./secciones/tasacion.html">Tasacion</a> 
-                    </li>
-                </ul>
-            </nav>
+            <nav class="navegar navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="index.html"><img class="w-50 logo" src="./img/Logoblanco.png" alt="logo"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse lista" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav" href="index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav" href="./secciones/propiedades.html">Propiedades</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav" href="./secciones/contacto.html">Contacto</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav" href="./secciones/nosotros.html">Nosotros</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav" href="./secciones/tasacion.html">Tasacion</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
         </header>
-    <main>
-        <section class="texto">
+        <main>
+            <section class="texto">
+                <div>
+                    <h1 class="titulo">
+                        No lo encontraras por un mejor precio
+                    </h1>
+                </div>
+                <div>
+                    <h2 class="subtitulo">
+                        Encuentra tu hogar ideal
+                    </h2>
+                </div>
+            </section>
+            <section class="ordenarInicio">
+                <figure>
+                    <img src="./img/casa2.jpg" alt="casa en moron" class="casa">
+                    <figcaption class="textocasa">Casa en venta en Moron</figcaption>
+                </figure>
+                <figure class="cordoba">
+                    <img src="./img/casa1.jpg" alt="casa en cordoba" class="casa casaCordoba">
+                    <figcaption class="textocasa">Casa en venta en Cordoba</figcaption>
+                </figure>
+            </section>
+        </main>
+        <footer class="footer">
             <div>
-                <h1 class="titulo">
-                    No lo encontraras por un mejor precio
-                </h1>
+                <h3 class="textocopy">©2022.Amiciweb.Todos los derechos reservados</h3>
             </div>
-            <div>
-                <h2 class="subtitulo">
-                    Encuentra tu hogar ideal
-                </h2>
-            </div>
-        </section>
-        <section class="ordenarInicio">
-            <figure>
-                <img src="./img/casa2.jpg" alt="casa en moron" class="casa">
-                <figcaption class="textocasa">Casa en venta en Moron</figcaption>
-            </figure>
-            <figure class="cordoba">
-                <img src="./img/casa1.jpg" alt="casa en cordoba" class="casa casaCordoba" >
-                <figcaption class="textocasa">Casa en venta en Cordoba</figcaption>
-            </figure>
-        </section>
-    </main>
-    <footer class="footer">
-        <div>
-            <h3 class="textocopy">©2022.Amiciweb.Todos los derechos reservados</h3>
-        </div>
-        <ul class="redes"> 
-        <li >
-            <a href="https://twitter.com/" target="_blank"><img src="https://img.icons8.com/ios-filled/50/000000/twitter-circled--v1.png" alt="twitter" /></a>
-        </li>
-        <li>
-            <a href="https://www.instagram.com/" target="_blank"><img src="https://img.icons8.com/ios-filled/50/000000/instagram-new--v1.png" alt="instagram" /></a>
-        </li>
-        <li>
-            <a href="https://www.facebook.com/" target="_blank"><img src="https://img.icons8.com/ios-filled/50/000000/facebook-new.png" alt="facebook"/></a>
-        </li>
-        <li>
-            <a href="https://www.youtube.com/" target="_blank"><img src="https://img.icons8.com/ios-filled/50/000000/youtube-play.png" alt="youtube" /></a>
-        </li>
-    </ul>
-    </footer>
+            <ul class="redes">
+                <li>
+                    <a href="https://twitter.com/" target="_blank"><img
+                            src="https://img.icons8.com/ios-filled/50/000000/twitter-circled--v1.png"
+                            alt="twitter" /></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/" target="_blank"><img
+                            src="https://img.icons8.com/ios-filled/50/000000/instagram-new--v1.png"
+                            alt="instagram" /></a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/" target="_blank"><img
+                            src="https://img.icons8.com/ios-filled/50/000000/facebook-new.png" alt="facebook" /></a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/" target="_blank"><img
+                            src="https://img.icons8.com/ios-filled/50/000000/youtube-play.png" alt="youtube" /></a>
+                </li>
+            </ul>
+        </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
 </body>
+
 </html>
