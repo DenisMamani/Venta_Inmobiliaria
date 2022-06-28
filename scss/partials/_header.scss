@@ -1,0 +1,61 @@
+/*header*/
+.header{
+    background-color: #0a0a0a;
+    box-shadow: #ffffff 0px 0px 10px 0px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.lista{
+    display: flex;
+    justify-content: end;
+    a{
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 18px;
+        margin: 0px 30px;
+    }
+}
+@media  (max-width: 767px){
+    .offcanvas{
+        background-color: #212529;
+        .offcanvas-header{
+            align-items: start;
+            border-bottom: 1px solid #5e5858;
+        }
+        .logoBlanco{
+            margin-left: 131px;
+        }
+        .lista{
+            margin-top: 60px;
+            justify-content: center;
+            a{
+                justify-content: center;
+                color: #ffffff;
+                font-size: 22px;
+                margin-top: 80px;
+            }
+        }
+    }
+    
+}
+@media  (min-width: 1024px){
+    .logo{
+        width: 70px !important;
+    }
+     .lista li a{
+        display: block;
+        padding: 5px 15px;
+        border: none;
+        &:hover{
+            color: #000000;
+        }
+    }
+    .lista li :hover{
+        transition: 1s;
+        background-color: #ffffff;
+        border-radius: 5px;
+    } 
+}

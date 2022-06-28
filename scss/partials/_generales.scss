@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+main{
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+header{
+    grid-area: header;
+}
+.navegar{
+    grid-area: nav;
+}
+.footer{
+    grid-area: footer;
+}
+/*inicio*/
+.gridContainerI{
+    grid-area: gridContainterI;
+}
+.texto{
+    grid-area: texto;
+}
+.ordenarInicio{
+    grid-area: ordInicio;
+}
+/*CONTACTO*/
+.gridContainerC{
+    grid-area: gridContainterC;
+}
+.tituloContacto{
+    grid-area: titContacto;
+}
+.infoContacto{
+    grid-area: infoContacto;
+}
+.formContacto{
+    grid-area: formContacto;
+}
+/*Nosotros*/
+.gridContainerN{
+    grid-area: gridContainterN;
+}
+.tituloNosotros{
+    grid-area: titNosotros;
+}
+.ordenarNosotros{
+    grid-area: ordNosotros;
+}
+/*Propiedades*/
+.gridContainerP{
+    grid-area: gridContainterP;
+}
+.tituloPropiedad{
+    grid-area: titPropiedad;
+}
+.propiedades{
+    grid-area: propiedades;
+}
+/*Tasacion*/
+.gridContainerT{
+    grid-area: gridContainterT;
+}
+.tituloTasacion{
+    grid-area: titTasacion;
+}
+.ordenar{
+    grid-area: ordTasacion;
+}
