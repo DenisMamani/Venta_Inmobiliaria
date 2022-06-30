@@ -5,25 +5,14 @@
     background-size: cover;
 }
 .casa{
-    border: solid rgb(0, 0, 0) 3px;
+    border: map-get($bordes, "inic-nos" );
 }
 @media  (max-width: 750px){
     .gridContainerI{
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto auto auto 1fr;
-        grid-template-areas:
-        "nav"
-        "texto"
-        "odrInicio"
-        "footer";
+       @include girdContainerI;
     }
     .texto{
-        letter-spacing: 2px;
-        text-align: center;
-        margin-top: 8rem;
-        color: #ffffff;
-        font-family: 'Roboto', sans-serif;
+        @include Tit-estilos(2px);
         animation-name: desplazarse;
         animation-duration: 3s;
         .titulo{
@@ -62,14 +51,7 @@
 }
 @media  (min-width: 750px){
     .gridContainerI{
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto auto 1fr auto;
-        grid-template-areas:
-        "nav"
-        "texto"
-        "odrInicio"
-        "footer";
+        @include girdContainerI;
     }
     .texto{
         letter-spacing: 4px;

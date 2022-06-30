@@ -5,12 +5,7 @@
     background-size: cover;
 }
 .tituloNosotros{
-    text-align: center;
-    margin-top: 8rem;
-    font-size: 2.5rem;
-    color: #ffffff;
-    font-family: 'Roboto', sans-serif;
-    letter-spacing: 6px;
+    @include Tit-estilos;
     animation-name: desplazarse;
     animation-duration: 3s;
     @keyframes desplazarse{
@@ -26,7 +21,7 @@
     align-items: center;
     margin-bottom: 3rem;
     .caja1{
-        border: #000000 solid 3px;
+        border: map-get($bordes, "inic-nos");
         margin: 4rem 2rem 1rem 2rem;
         background-color: #fdfdfd;
         border-radius: 5px;
@@ -44,24 +39,23 @@
         text-align: center;
         img{
             width: 70%;
-            border: 3px solid black;
+            border: map-get($bordes, "inic-nos");
         }
     }
 }
+@media (max-width: 750px) {
+    .gridContainerN{
+    @include gridContainerN;
+    }
+}
+
 @media  (min-width: 750px){
     .gridContainerN{
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-areas: 
-        "nav"
-        "titNosotros"
-        "ordNosotros"
-        "footer";
-        grid-template-rows: auto auto ;
+        @include gridContainerN;
     }
     .tituloNosotros{
         margin-top: 9rem;
-        font-size: 3rem;
+        font-size: 45px;
         letter-spacing: 10px;
         animation-duration: 2s;
     }

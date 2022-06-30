@@ -1,0 +1,69 @@
+
+@mixin Tit-estilos($letter-spacing:6px) {
+    margin-top: 8rem;
+    color: #ffffff;
+    letter-spacing:$letter-spacing;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+}
+// formulario mobile
+@mixin formDatos {
+    font-family: $font-form;
+    font-size: 18px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 0px;
+}
+@mixin formBoton {
+        font-weight: bolder;
+        font-size: 18px;
+        padding: 10px;
+        font-family: $font-form;
+        width: 100%;
+        background-color: #ffffff;
+        color: #000000;
+        border-radius: 5px;
+        border: 0px
+}
+@mixin formP ($font-size:20px) {
+            font-size: $font-size;
+            font-family: $font-form;
+            color: #FFFFFF;
+            margin-bottom: 15px;
+            text-align: center;
+}
+// gridContainer
+@mixin gridContainerN{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-areas:
+        "nav"
+        "titNosotros"
+        "ordNosotros"
+        "footer";
+        grid-template-rows: auto auto 1fr auto ;
+}
+@mixin gridContainerC {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-areas: 
+        "nav"
+        "titContacto"
+        "infoContacto"
+        "formContacto"
+        "footer";
+        grid-template-rows: auto auto auto 1fr auto;
+}
+@mixin girdContainerI{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto 1fr;
+    grid-template-areas:
+    "nav"
+    "texto"
+    "odrInicio"
+    "footer"
+}

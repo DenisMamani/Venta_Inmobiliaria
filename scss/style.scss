@@ -1,9 +1,11 @@
-@import "./partials/variables";
+@import "./base/variables";
+@import "./base/mixins";
+@import "./base/maps";
 @import "./partials/generales";
 @import "./partials/header";
 @import "./partials/inicio";
 @import "./partials/propiedades";
 @import "./partials/contacto";
 @import "./partials/nosotros";
-@import "./partials/tasascion";
+@import "./partials/tasacion";
 @import "./partials/footer.scss";

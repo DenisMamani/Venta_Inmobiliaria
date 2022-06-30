@@ -5,19 +5,7 @@
     background-size: cover;
 }
 .tituloTasacion h1{
-    margin-top: 8rem;
-    font-size: 40px;
-    text-align: center;
-    color: #ffffff;
-    letter-spacing: 6px;
-    font-family: 'Roboto', sans-serif;
-    animation-name: desplazarse;
-    animation-duration: 3s;
-    @keyframes desplazarse{
-        0%{
-            transform: translateY(-45px);
-        }
-    }
+    @extend .tituloNosotros;
 }
 .ordenar{
     display: flex;
@@ -31,7 +19,7 @@
         padding: 15px;
         margin-bottom: 3rem;
         border-radius: 100%;
-        border: solid rgb(255, 255, 255);
+        border: map-get($bordes, "contac-tasa" );
         img{
             width: 300px;
             height: 260px;
@@ -44,13 +32,10 @@
         width: 380px;
         height: 620px;
         padding: 20px;
-        border: solid rgb(255, 255, 255);
+        margin-bottom: 20px;
+        border: map-get($bordes, "contac-tasa" );
         p{
-            font-size: 20px;
-            font-family: $font-form;
-            color: #FFFFFF;
-            margin-bottom: 15px;
-            text-align: center;
+            @include formP;
         }
         .dire{
             font-size: 18px;
@@ -62,24 +47,10 @@
             border: 0px;
         }
         .botonTasacion{
-            font-weight: bolder;
-            font-size: 18px;
-            padding: 10px;
-            font-family: $font-form;
-            width: 100%;
-            background-color: #ffffff;
-            color: #000000;
-            border-radius: 5px;
-            border: 0px
+            @include formBoton;
         }
         .datos{
-            font-family: $font-form;
-            font-size: 18px;
-            padding: 10px;
-            width: 100%;
-            border-radius: 5px;
-            margin-bottom: 10px;
-            border: 0px;
+           @include formDatos;
         }
         .textArea{
             font-size: 18px;
@@ -113,21 +84,26 @@
     .ordenar{
         margin: 6rem 0rem;
         .formTasacion{
-            width: 450px;
+            width: 430px;
             height: 700px;
             p{
                 margin-bottom: 25px;
                 font-size: 28px;
             }
             .datos{
-                width: 100%;
+                padding: 10px;
+                width: 355px;
             }
             .textArea{
-                width: 100%;
+                padding: 10px;
+                width: 355px;
             }
             .dire{
                 padding: 15px;
-                width: 100%;
+                width: 355px;
+            }
+            .botonTasacion{
+                margin-top: 30px;
             }
         }
     }
@@ -153,7 +129,7 @@
         }
         .formTasacion{
             width: 500px;
-            height: 670px;
+
             p{
                 font-size: 30px;
                 letter-spacing: 2px;

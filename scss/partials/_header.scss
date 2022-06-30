@@ -53,9 +53,11 @@
             color: #000000;
         }
     }
-    .lista li :hover{
-        transition: 1s;
+    .lista li{
+        &:hover{
+        transition: 1.2s;
         background-color: #ffffff;
         border-radius: 5px;
-    } 
+        } 
+    }
 }

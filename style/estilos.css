@@ -45,7 +45,7 @@ header {
 .gridContainerN {
   grid-area: gridContainterN; }
 
-.tituloNosotros {
+.tituloNosotros, .tituloContacto, .tituloTasacion h1 {
   grid-area: titNosotros; }
 
 .ordenarNosotros {
@@ -116,8 +116,8 @@ header {
     border: none; }
     .lista li a:hover {
       color: #000000; }
-  .lista li :hover {
-    transition: 1s;
+  .lista li:hover {
+    transition: 1.2s;
     background-color: #ffffff;
     border-radius: 5px; } }
 
@@ -137,11 +137,12 @@ header {
     grid-template-rows: auto auto auto 1fr;
     grid-template-areas: "nav" "texto" "odrInicio" "footer"; }
   .texto {
-    letter-spacing: 2px;
-    text-align: center;
     margin-top: 8rem;
     color: #ffffff;
+    letter-spacing: 2px;
     font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
     animation-name: desplazarse;
     animation-duration: 3s; }
     .texto .titulo {
@@ -174,7 +175,7 @@ header {
   .gridContainerI {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: auto auto 1fr auto;
+    grid-template-rows: auto auto auto 1fr;
     grid-template-areas: "nav" "texto" "odrInicio" "footer"; }
   .texto {
     letter-spacing: 4px;
@@ -239,12 +240,13 @@ header {
   background-size: cover; }
 
 .tituloPropiedad h1 {
-  font-size: 2rem;
-  text-align: center;
-  margin-bottom: 4rem;
-  letter-spacing: 6px;
+  margin-top: 8rem;
   color: #ffffff;
-  font-family: 'Roboto', sans-serif; }
+  letter-spacing: 6px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 4rem; }
 
 .propiedades {
   display: grid;
@@ -268,22 +270,16 @@ header {
     background-color: #e7dede;
     border-radius: 0px 0px 5px 5px;
     padding: 4px 6px 8px 5px;
-    width: 349px; }
+    width: 350px; }
 
 @media (max-width: 750px) {
   .tituloPropiedad h1 {
     font-size: 40px;
-    margin-top: 8rem;
     animation-name: desplazarse;
     animation-duration: 3s; }
   @keyframes desplazarse {
     0% {
-      transform: translateY(-45px); } }
-  .ordenarPropiedades img {
-    width: 400px;
-    height: 350px; }
-  .ordenarPropiedades .descPropiedad {
-    width: auto; } }
+      transform: translateY(-45px); } } }
 
 @media (min-width: 750px) {
   .gridContainerP {
@@ -292,7 +288,6 @@ header {
     grid-template-areas: "nav" "titPropiedad" "propiedades" "footer";
     grid-template-rows: auto auto 1fr auto; }
   .tituloPropiedad h1 {
-    margin-top: 9.5rem;
     letter-spacing: 10px;
     animation-name: desplazarse;
     animation-duration: 2s;
@@ -307,7 +302,9 @@ header {
       width: 550px;
       height: 450px; }
     .propiedades .ordenarPropiedades .descPropiedad {
-      width: auto; } }
+      text-align: center;
+      width: 550px;
+      font-size: 18px; } }
 
 @media (min-width: 1024px) {
   .tituloPropiedad h1 {
@@ -318,36 +315,24 @@ header {
     gap: 100px;
     margin: 0px 50px 100px; }
     .propiedades .ordenarPropiedades img {
-      width: 455px;
-      height: 350px;
+      width: 480px;
+      height: 380px;
       cursor: pointer; }
       .propiedades .ordenarPropiedades img:hover {
         transition-duration: 1.5s;
-        width: 500px;
-        height: 380px;
+        width: 520px;
+        height: 420px;
         box-shadow: -1px -1px 26px rgba(172, 172, 172, 0.6); }
     .propiedades .ordenarPropiedades .descPropiedad {
-      text-align: center;
-      font-size: 16px; } }
+      width: auto;
+      font-size: 16px;
+      letter-spacing: 1px; } }
 
 /*contacto*/
 .cuerpoContacto {
   background-image: url(../img/contactofondo.png);
   background-repeat: no-repeat;
   background-size: cover; }
-
-.tituloContacto {
-  margin-top: 8rem;
-  color: #ffffff;
-  font-family: 'Roboto', sans-serif;
-  text-align: center;
-  letter-spacing: 6px;
-  animation-name: desplazarse;
-  animation-duration: 3s; }
-
-@keyframes desplazarse {
-  0% {
-    transform: translateY(-40px); } }
 
 .infoContacto p {
   text-align: center;
@@ -361,7 +346,7 @@ header {
 
 @keyframes desplazarseX {
   0% {
-    transform: translateX(25px); } }
+    transform: translateX(16px); } }
 
 .formContacto {
   background-color: #0a0a0ad3;
@@ -372,12 +357,12 @@ header {
   margin: auto;
   padding: 30px;
   margin-top: 70px;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
   border: solid white; }
   .formContacto p {
     font-size: 30px;
     font-family: sans-serif;
-    color: #ffffff;
+    color: #FFFFFF;
     margin-bottom: 15px;
     text-align: center; }
   .formContacto .datos {
@@ -409,6 +394,13 @@ header {
     border-radius: 5px;
     border: 0px; }
 
+@media (max-width: 750px) {
+  .gridContainerC {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: "nav" "titContacto" "infoContacto" "formContacto" "footer";
+    grid-template-rows: auto auto auto 1fr auto; } }
+
 @media (min-width: 750px) {
   .gridContainerC {
     display: grid;
@@ -426,6 +418,9 @@ header {
     .infoContacto p {
       font-size: 25px;
       width: 720px; }
+  @keyframes desplazarseX {
+    0% {
+      transform: translateX(25px); } }
   .formContacto {
     width: 430px;
     height: 650px;
@@ -469,13 +464,13 @@ header {
   background-repeat: no-repeat;
   background-size: cover; }
 
-.tituloNosotros {
-  text-align: center;
+.tituloNosotros, .tituloContacto, .tituloTasacion h1 {
   margin-top: 8rem;
-  font-size: 2.5rem;
   color: #ffffff;
-  font-family: 'Roboto', sans-serif;
   letter-spacing: 6px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
   animation-name: desplazarse;
   animation-duration: 3s; }
 
@@ -490,7 +485,7 @@ header {
   align-items: center;
   margin-bottom: 3rem; }
   .ordenarNosotros .caja1 {
-    border: #000000 solid 3px;
+    border: solid black 3px;
     margin: 4rem 2rem 1rem 2rem;
     background-color: #fdfdfd;
     border-radius: 5px;
@@ -506,17 +501,24 @@ header {
     text-align: center; }
     .ordenarNosotros .imgNosotros img {
       width: 70%;
-      border: 3px solid black; }
+      border: solid black 3px; }
+
+@media (max-width: 750px) {
+  .gridContainerN {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: "nav" "titNosotros" "ordNosotros" "footer";
+    grid-template-rows: auto auto 1fr auto; } }
 
 @media (min-width: 750px) {
   .gridContainerN {
     display: grid;
     grid-template-columns: auto;
     grid-template-areas: "nav" "titNosotros" "ordNosotros" "footer";
-    grid-template-rows: auto auto; }
-  .tituloNosotros {
+    grid-template-rows: auto auto 1fr auto; }
+  .tituloNosotros, .tituloContacto, .tituloTasacion h1 {
     margin-top: 9rem;
-    font-size: 3rem;
+    font-size: 45px;
     letter-spacing: 10px;
     animation-duration: 2s; }
   .ordenarNosotros {
@@ -533,7 +535,7 @@ header {
       width: 32rem; } }
 
 @media (min-width: 1024px) {
-  .tituloNosotros {
+  .tituloNosotros, .tituloContacto, .tituloTasacion h1 {
     font-size: 3rem;
     margin-top: 9.5rem; }
   .ordenarNosotros {
@@ -562,20 +564,6 @@ header {
   background-repeat: no-repeat;
   background-size: cover; }
 
-.tituloTasacion h1 {
-  margin-top: 8rem;
-  font-size: 40px;
-  text-align: center;
-  color: #ffffff;
-  letter-spacing: 6px;
-  font-family: 'Roboto', sans-serif;
-  animation-name: desplazarse;
-  animation-duration: 3s; }
-
-@keyframes desplazarse {
-  0% {
-    transform: translateY(-45px); } }
-
 .ordenar {
   display: flex;
   flex-direction: column;
@@ -599,6 +587,7 @@ header {
     width: 380px;
     height: 620px;
     padding: 20px;
+    margin-bottom: 20px;
     border: solid white; }
     .ordenar .formTasacion p {
       font-size: 20px;
@@ -656,18 +645,22 @@ header {
   .ordenar {
     margin: 6rem 0rem; }
     .ordenar .formTasacion {
-      width: 450px;
+      width: 430px;
       height: 700px; }
       .ordenar .formTasacion p {
         margin-bottom: 25px;
         font-size: 28px; }
       .ordenar .formTasacion .datos {
-        width: 100%; }
+        padding: 10px;
+        width: 355px; }
       .ordenar .formTasacion .textArea {
-        width: 100%; }
+        padding: 10px;
+        width: 355px; }
       .ordenar .formTasacion .dire {
         padding: 15px;
-        width: 100%; } }
+        width: 355px; }
+      .ordenar .formTasacion .botonTasacion {
+        margin-top: 30px; } }
 
 @media (min-width: 1024px) {
   .tituloTasacion h1 {
@@ -686,8 +679,7 @@ header {
         width: 430px;
         height: 430px; }
     .ordenar .formTasacion {
-      width: 500px;
-      height: 670px; }
+      width: 500px; }
       .ordenar .formTasacion p {
         font-size: 30px;
         letter-spacing: 2px; }
