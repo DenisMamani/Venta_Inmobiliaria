@@ -43,7 +43,34 @@
         }
     }
 }
-@media (max-width: 750px) {
+@media (max-width: 450px){
+    .gridContainerN{
+        @include gridContainerN;
+        }
+        .tituloNosotros{
+            font-size: 1.5rem;
+            margin-bottom: 0;
+        }
+        .ordenarNosotros{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            .caja1{
+                width: 220px;
+                .parrafoNosotros{
+                    font-size: 8px;
+                    line-height: 10px;
+                    margin: 0;
+                }
+            }
+            .imgNosotros img{
+                margin-top: 20px;
+                width: 170px;
+            }
+        }
+}
+@media (min-width: 450px) and (max-width: 750px) {
     .gridContainerN{
     @include gridContainerN;
     }

@@ -31,11 +31,11 @@
         border-radius: 10px;
         width: 380px;
         height: 620px;
-        padding: 20px;
+        padding: 25px;
         margin-bottom: 20px;
         border: map-get($bordes, "contac-tasa" );
         p{
-            @include formP;
+            @include formP(22px);
         }
         .dire{
             font-size: 18px;
@@ -65,16 +65,69 @@
         }
     }
 }
-@media  (min-width: 750px){
+@media  (max-width: 450px){
     .gridContainerT{
-        display: grid;
-        grid-template-columns: auto;
-        grid-template-rows: auto auto 1fr auto;
-        grid-template-areas: 
-        "nav"
-        "titTasacion"
-        "formTasacion"
-        "footer";
+        @include gridContainterT;
+        }
+        .tituloTasacion{
+            font-size: 1.8rem;
+        }
+        .ordenar{
+            margin: 2rem 0;
+            .imgTasacion{
+                padding: 10px;
+                margin-bottom: 1.5rem;
+                border-radius: 100%;
+                border: map-get($bordes, "contac-tasa" );
+                img{
+                    width: 180px;
+                    height: 160px;
+                }
+            }
+            .formTasacion{
+                border-radius: 10px;
+                width: 250px;
+                height: 500px;
+                padding: 10px 20px 0px 20px;
+                margin-bottom: 10px;
+                border: map-get($bordes, "contac-tasa" );
+                p{
+                    @include formP(15px);
+                }
+                .dire{
+                    font-size: 13px;
+                    border-radius: 5px;
+                    width: 100%;
+                    padding: 10px;
+                    font-family: $font-form;
+                    margin-bottom: 10px;
+                    border: 0px;
+                }
+                .botonTasacion{
+                    @include formBoton;
+                    font-size: 13px
+                }
+                .datos{
+                   @include formDatos;
+                   font-size: 13px;
+                }
+                .textArea{
+                    font-size: 13px;
+                    margin-bottom: 15px;
+                    padding: 6px;
+                    height: 100px;
+                    font-family: $font-form;
+                    width: 100%;
+                    border-radius: 5px;
+                    border: 0px;
+                    resize: none;
+                }
+            }
+        }
+}
+@media  (min-width: 450px) and (max-width: 750px){
+    .gridContainerT{
+        @include gridContainterT;
     }
     .tituloTasacion h1{
         font-size: 45px;
@@ -129,18 +182,23 @@
         }
         .formTasacion{
             width: 500px;
+            height: 740px;
+            padding: 30px 50px;
             p{
+                margin-bottom: 25px;
                 font-size: 30px;
-                letter-spacing: 2px;
             }
             .datos{
-                width: 420px;
+                padding: 15px;
+                width: 100%;
             }
             .dire{
-                width: 420px;
+                padding: 15px;
+                width: 100%;
             }
             .textArea{
-                width:420px;
+                padding: 15px;
+                width: 100%;
             }
             .botonTasacion{
                 cursor: pointer;

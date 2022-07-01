@@ -70,7 +70,7 @@
         text-align: center;
         width: 250px;
         height: 450px;
-        margin-bottom: 80px;
+        padding: 10px 20px 0px 20px;
         p{
             font-size: 25px;
         }
@@ -93,6 +93,9 @@
 @media (min-width: 450px) and (max-width: 750px){
     .gridContainerC{
         @include gridContainerC;
+    }
+    .tituloContacto h1{
+        font-size: 2rem;
     }
 }
 @media  (min-width: 750px){
@@ -151,17 +154,18 @@
     }
      .formContacto{
         width: 500px;
-        height: 720px;
+        height: 740px;
         margin-bottom: 120px;
+        padding: 30px 50px;
         p{
             font-size: 50px;
             margin-bottom: 50px;
         }
         .datos{
-            width: 420px;
+            width: 100%;
         }
         .textArea{
-            width: 420px;
+            width: 100%;
         }
         .boton{
             margin-top: 50px;

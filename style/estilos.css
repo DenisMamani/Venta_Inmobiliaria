@@ -486,7 +486,7 @@ header {
     text-align: center;
     width: 250px;
     height: 450px;
-    margin-bottom: 80px; }
+    padding: 10px 20px 0px 20px; }
     .formContacto p {
       font-size: 25px; }
     .formContacto .datos {
@@ -506,7 +506,9 @@ header {
     display: grid;
     grid-template-columns: auto;
     grid-template-areas: "nav" "titContacto" "infoContacto" "formContacto" "footer";
-    grid-template-rows: auto auto auto 1fr auto; } }
+    grid-template-rows: auto auto auto 1fr auto; }
+  .tituloContacto h1 {
+    font-size: 2rem; } }
 
 @media (min-width: 750px) {
   .gridContainerC {
@@ -552,15 +554,16 @@ header {
     width: 70%; }
   .formContacto {
     width: 500px;
-    height: 720px;
-    margin-bottom: 120px; }
+    height: 740px;
+    margin-bottom: 120px;
+    padding: 30px 50px; }
     .formContacto p {
       font-size: 50px;
       margin-bottom: 50px; }
     .formContacto .datos {
-      width: 420px; }
+      width: 100%; }
     .formContacto .textArea {
-      width: 420px; }
+      width: 100%; }
     .formContacto .boton {
       margin-top: 50px;
       cursor: pointer; } }
@@ -610,7 +613,31 @@ header {
       width: 70%;
       border: solid black 3px; }
 
-@media (max-width: 750px) {
+@media (max-width: 450px) {
+  .gridContainerN {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: "nav" "titNosotros" "ordNosotros" "footer";
+    grid-template-rows: auto auto 1fr auto; }
+  .tituloNosotros, .tituloContacto, .tituloTasacion h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0; }
+  .ordenarNosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0; }
+    .ordenarNosotros .caja1 {
+      width: 220px; }
+      .ordenarNosotros .caja1 .parrafoNosotros {
+        font-size: 8px;
+        line-height: 10px;
+        margin: 0; }
+    .ordenarNosotros .imgNosotros img {
+      margin-top: 20px;
+      width: 170px; } }
+
+@media (min-width: 450px) and (max-width: 750px) {
   .gridContainerN {
     display: grid;
     grid-template-columns: auto;
@@ -693,11 +720,11 @@ header {
     border-radius: 10px;
     width: 380px;
     height: 620px;
-    padding: 20px;
+    padding: 25px;
     margin-bottom: 20px;
     border: solid white; }
     .ordenar .formTasacion p {
-      font-size: 20px;
+      font-size: 22px;
       font-family: sans-serif;
       color: #FFFFFF;
       margin-bottom: 15px;
@@ -739,7 +766,77 @@ header {
       border: 0px;
       resize: none; }
 
-@media (min-width: 750px) {
+@media (max-width: 450px) {
+  .gridContainerT {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-areas: "nav" "titTasacion" "formTasacion" "footer"; }
+  .tituloTasacion {
+    font-size: 1.8rem; }
+  .ordenar {
+    margin: 2rem 0; }
+    .ordenar .imgTasacion {
+      padding: 10px;
+      margin-bottom: 1.5rem;
+      border-radius: 100%;
+      border: solid white; }
+      .ordenar .imgTasacion img {
+        width: 180px;
+        height: 160px; }
+    .ordenar .formTasacion {
+      border-radius: 10px;
+      width: 250px;
+      height: 500px;
+      padding: 10px 20px 0px 20px;
+      margin-bottom: 10px;
+      border: solid white; }
+      .ordenar .formTasacion p {
+        font-size: 15px;
+        font-family: sans-serif;
+        color: #FFFFFF;
+        margin-bottom: 15px;
+        text-align: center; }
+      .ordenar .formTasacion .dire {
+        font-size: 13px;
+        border-radius: 5px;
+        width: 100%;
+        padding: 10px;
+        font-family: sans-serif;
+        margin-bottom: 10px;
+        border: 0px; }
+      .ordenar .formTasacion .botonTasacion {
+        font-weight: bolder;
+        font-size: 18px;
+        padding: 10px;
+        font-family: sans-serif;
+        width: 100%;
+        background-color: #ffffff;
+        color: #000000;
+        border-radius: 5px;
+        border: 0px;
+        font-size: 13px; }
+      .ordenar .formTasacion .datos {
+        font-family: sans-serif;
+        font-size: 18px;
+        padding: 10px;
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        border: 0px;
+        font-size: 13px; }
+      .ordenar .formTasacion .textArea {
+        font-size: 13px;
+        margin-bottom: 15px;
+        padding: 6px;
+        height: 100px;
+        font-family: sans-serif;
+        width: 100%;
+        border-radius: 5px;
+        border: 0px;
+        resize: none; } }
+
+@media (min-width: 450px) and (max-width: 750px) {
   .gridContainerT {
     display: grid;
     grid-template-columns: auto;
@@ -786,16 +883,21 @@ header {
         width: 430px;
         height: 430px; }
     .ordenar .formTasacion {
-      width: 500px; }
+      width: 500px;
+      height: 740px;
+      padding: 30px 50px; }
       .ordenar .formTasacion p {
-        font-size: 30px;
-        letter-spacing: 2px; }
+        margin-bottom: 25px;
+        font-size: 30px; }
       .ordenar .formTasacion .datos {
-        width: 420px; }
+        padding: 15px;
+        width: 100%; }
       .ordenar .formTasacion .dire {
-        width: 420px; }
+        padding: 15px;
+        width: 100%; }
       .ordenar .formTasacion .textArea {
-        width: 420px; }
+        padding: 15px;
+        width: 100%; }
       .ordenar .formTasacion .botonTasacion {
         cursor: pointer; } }
 
