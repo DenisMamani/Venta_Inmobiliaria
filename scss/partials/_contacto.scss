@@ -54,7 +54,43 @@
         @include formBoton;
     }
 }
-@media (max-width: 750px){
+@media (max-width: 450px){
+    .gridContainerC{
+        @include gridContainerC;
+    }
+    .tituloContacto h1{
+        font-size: 1.5rem;
+    }
+    .infoContacto p{
+        font-size: 15px;
+        letter-spacing: 1px;
+        line-height: 20px;
+    }
+    .formContacto{
+        text-align: center;
+        width: 250px;
+        height: 450px;
+        margin-bottom: 80px;
+        p{
+            font-size: 25px;
+        }
+        .datos{
+            padding: 6px;
+            font-size: 15px;
+        }
+        .textArea{
+            padding: 6px;
+            font-size: 15px;
+            height: 100px;
+        }
+        .boton{
+            padding: 6px;
+            margin-top: 10px;
+            font-size: 15px;
+        }
+    }
+}
+@media (min-width: 450px) and (max-width: 750px){
     .gridContainerC{
         @include gridContainerC;
     }

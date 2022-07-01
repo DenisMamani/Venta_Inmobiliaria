@@ -129,14 +129,23 @@
         }
         .formTasacion{
             width: 500px;
-
             p{
                 font-size: 30px;
                 letter-spacing: 2px;
             }
+            .datos{
+                width: 420px;
+            }
+            .dire{
+                width: 420px;
+            }
+            .textArea{
+                width:420px;
+            }
             .botonTasacion{
                 cursor: pointer;
             }
+
         }
     }
 }

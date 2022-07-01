@@ -18,7 +18,29 @@
         margin: 0px 30px;
     }
 }
-@media  (max-width: 767px){
+@media (max-width: 450px){
+    .logoBlanco{
+        width: 65px;
+        margin-left: 92px;
+    }
+    .offcanvas{
+        background-color: #212529;
+        .offcanvas-header{
+            align-items: start;
+            border-bottom: 1px solid #5e5858;
+        }
+        .lista{
+            justify-content: center;
+            a{
+                justify-content: center;
+                color: #ffffff;
+                font-size: 15px;
+                margin-top: 60px;
+            }
+        }
+    }
+}
+@media  (min-width: 450px) and (max-width: 767px){
     .offcanvas{
         background-color: #212529;
         .offcanvas-header{
@@ -39,25 +61,24 @@
             }
         }
     }
-    
 }
 @media  (min-width: 1024px){
     .logo{
         width: 70px !important;
-    }
-     .lista li a{
-        display: block;
-        padding: 5px 15px;
-        border: none;
-        &:hover{
-            color: #000000;
-        }
     }
     .lista li{
         &:hover{
         transition: 1.2s;
         background-color: #ffffff;
         border-radius: 5px;
+        a{
+            color: #000000;
+        }
         } 
+        a{
+            display: block;
+            padding: 5px 15px;
+            border: none;
+        }
     }
 }

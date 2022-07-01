@@ -7,7 +7,48 @@
 .casa{
     border: map-get($bordes, "inic-nos" );
 }
-@media  (max-width: 750px){
+@media (max-width: 450px){
+    .gridContainerI{
+        @include girdContainerI;
+     }
+     .texto{
+        @include Tit-estilos(2px, 7.5rem);
+        animation-name: desplazarsepoco;
+        animation-duration: 3s;
+        .titulo{
+            font-size: 18px;
+        }
+        .subtitulo{
+            font-size: 16px;
+            margin-top: 25px;
+        }
+        @keyframes desplazarsepoco{
+            0%{
+                 transform: translateY(-22px);
+              }
+        }
+     }
+     .ordenarInicio{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        margin-top: 60px;
+        margin-bottom: 20px;
+        .casa{
+            width: 75%;
+            height: auto;
+            border: solid rgb(0, 0, 0) 2px;
+        }
+        .textocasa{
+            color: #ffffff;
+            font-family: $font-p;
+            font-size: 12px;
+            letter-spacing: 2px;
+        }
+     }
+}
+@media  (min-width:450px) and (max-width: 750px){
     .gridContainerI{
        @include girdContainerI;
     }

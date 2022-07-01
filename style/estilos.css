@@ -90,7 +90,24 @@ header {
     font-size: 18px;
     margin: 0px 30px; }
 
-@media (max-width: 767px) {
+@media (max-width: 450px) {
+  .logoBlanco {
+    width: 65px;
+    margin-left: 92px; }
+  .offcanvas {
+    background-color: #212529; }
+    .offcanvas .offcanvas-header {
+      align-items: start;
+      border-bottom: 1px solid #5e5858; }
+    .offcanvas .lista {
+      justify-content: center; }
+      .offcanvas .lista a {
+        justify-content: center;
+        color: #ffffff;
+        font-size: 15px;
+        margin-top: 60px; } }
+
+@media (min-width: 450px) and (max-width: 767px) {
   .offcanvas {
     background-color: #212529; }
     .offcanvas .offcanvas-header {
@@ -110,16 +127,16 @@ header {
 @media (min-width: 1024px) {
   .logo {
     width: 70px !important; }
-  .lista li a {
-    display: block;
-    padding: 5px 15px;
-    border: none; }
-    .lista li a:hover {
-      color: #000000; }
   .lista li:hover {
     transition: 1.2s;
     background-color: #ffffff;
-    border-radius: 5px; } }
+    border-radius: 5px; }
+    .lista li:hover a {
+      color: #000000; }
+  .lista li a {
+    display: block;
+    padding: 5px 15px;
+    border: none; } }
 
 /*INICIO*/
 .cuerpoInicio {
@@ -130,11 +147,51 @@ header {
 .casa {
   border: solid black 3px; }
 
-@media (max-width: 750px) {
+@media (max-width: 450px) {
   .gridContainerI {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: auto auto auto 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-areas: "nav" "texto" "odrInicio" "footer"; }
+  .texto {
+    margin-top: 7.5rem;
+    color: #ffffff;
+    letter-spacing: 2px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    animation-name: desplazarsepoco;
+    animation-duration: 3s; }
+    .texto .titulo {
+      font-size: 18px; }
+    .texto .subtitulo {
+      font-size: 16px;
+      margin-top: 25px; }
+  @keyframes desplazarsepoco {
+    0% {
+      transform: translateY(-22px); } }
+  .ordenarInicio {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 20px; }
+    .ordenarInicio .casa {
+      width: 75%;
+      height: auto;
+      border: solid black 2px; }
+    .ordenarInicio .textocasa {
+      color: #ffffff;
+      font-family: "Montserrat", sans-serif;
+      font-size: 12px;
+      letter-spacing: 2px; } }
+
+@media (min-width: 450px) and (max-width: 750px) {
+  .gridContainerI {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto 1fr auto;
     grid-template-areas: "nav" "texto" "odrInicio" "footer"; }
   .texto {
     margin-top: 8rem;
@@ -175,7 +232,7 @@ header {
   .gridContainerI {
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: auto auto auto 1fr;
+    grid-template-rows: auto auto 1fr auto;
     grid-template-areas: "nav" "texto" "odrInicio" "footer"; }
   .texto {
     letter-spacing: 4px;
@@ -272,7 +329,26 @@ header {
     padding: 4px 6px 8px 5px;
     width: 350px; }
 
-@media (max-width: 750px) {
+@media (max-width: 450px) {
+  .gridContainerP {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: "nav" "titPropiedad" "propiedades" "footer";
+    grid-template-rows: auto auto 1fr auto; }
+  .tituloPropiedad h1 {
+    font-size: 25px;
+    letter-spacing: 2px; }
+  .propiedades {
+    grid-template-columns: repeat(auto-fit, 15rem); }
+    .propiedades .ordenarPropiedades img {
+      width: 100%;
+      height: 200px; }
+    .propiedades .ordenarPropiedades .descPropiedad {
+      text-align: center;
+      width: auto;
+      font-size: 10px; } }
+
+@media (min-width: 450px) and (max-width: 750px) {
   .tituloPropiedad h1 {
     font-size: 40px;
     animation-name: desplazarse;
@@ -394,7 +470,38 @@ header {
     border-radius: 5px;
     border: 0px; }
 
-@media (max-width: 750px) {
+@media (max-width: 450px) {
+  .gridContainerC {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-areas: "nav" "titContacto" "infoContacto" "formContacto" "footer";
+    grid-template-rows: auto auto auto 1fr auto; }
+  .tituloContacto h1 {
+    font-size: 1.5rem; }
+  .infoContacto p {
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 20px; }
+  .formContacto {
+    text-align: center;
+    width: 250px;
+    height: 450px;
+    margin-bottom: 80px; }
+    .formContacto p {
+      font-size: 25px; }
+    .formContacto .datos {
+      padding: 6px;
+      font-size: 15px; }
+    .formContacto .textArea {
+      padding: 6px;
+      font-size: 15px;
+      height: 100px; }
+    .formContacto .boton {
+      padding: 6px;
+      margin-top: 10px;
+      font-size: 15px; } }
+
+@media (min-width: 450px) and (max-width: 750px) {
   .gridContainerC {
     display: grid;
     grid-template-columns: auto;
@@ -683,6 +790,12 @@ header {
       .ordenar .formTasacion p {
         font-size: 30px;
         letter-spacing: 2px; }
+      .ordenar .formTasacion .datos {
+        width: 420px; }
+      .ordenar .formTasacion .dire {
+        width: 420px; }
+      .ordenar .formTasacion .textArea {
+        width: 420px; }
       .ordenar .formTasacion .botonTasacion {
         cursor: pointer; } }
 
@@ -697,14 +810,26 @@ header {
 
 .redes {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   margin: 0; }
   .redes li {
     display: inline-block;
-    padding-right: 25px;
-    padding-left: 25px; }
+    padding-right: 10px;
+    padding-left: 10px; }
 
-@media (max-width: 750px) {
+@media (max-width: 450px) {
+  .textocopy {
+    letter-spacing: 0.2px;
+    margin-top: 10px;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    color: #000000; }
+  .redes {
+    padding: 0px 0px 2px 0px; }
+    .redes li a img {
+      width: 20px; } }
+
+@media (min-width: 450px) and (max-width: 750px) {
   .textocopy {
     letter-spacing: 0.5px;
     margin-top: 10px;
