@@ -403,8 +403,8 @@ header {
       cursor: pointer; }
       .propiedades .ordenarPropiedades img:hover {
         transition-duration: 1.5s;
-        width: 508px;
-        height: 408px;
+        width: 507px;
+        height: 405px;
         box-shadow: -1px -1px 26px rgba(172, 172, 172, 0.6); }
     .propiedades .ordenarPropiedades .descPropiedad {
       width: auto;
