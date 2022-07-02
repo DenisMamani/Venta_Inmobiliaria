@@ -81,6 +81,12 @@ header {
   left: 0;
   z-index: 1; }
 
+.offcanvas {
+  background-color: #212529; }
+  .offcanvas .offcanvas-header {
+    align-items: start;
+    border-bottom: 1px solid #5e5858; }
+
 .lista {
   display: flex;
   justify-content: end; }
@@ -90,39 +96,40 @@ header {
     font-size: 18px;
     margin: 0px 30px; }
 
-@media (max-width: 450px) {
+@media (max-width: 414px) {
   .logoBlanco {
-    width: 65px;
-    margin-left: 92px; }
-  .offcanvas {
-    background-color: #212529; }
-    .offcanvas .offcanvas-header {
-      align-items: start;
-      border-bottom: 1px solid #5e5858; }
-    .offcanvas .lista {
-      justify-content: center; }
-      .offcanvas .lista a {
-        justify-content: center;
-        color: #ffffff;
-        font-size: 15px;
-        margin-top: 60px; } }
+    width: 70px; }
+  .lista {
+    justify-content: center;
+    margin-top: 90px; }
+    .lista a {
+      justify-content: center;
+      color: #ffffff;
+      font-size: 18px;
+      margin-bottom: 50px; } }
+
+@media (min-width: 415px) and (max-width: 450px) {
+  .logoBlanco {
+    width: 70px; }
+  .lista {
+    justify-content: center;
+    margin-top: 110px; }
+    .lista a {
+      justify-content: center;
+      color: #ffffff;
+      font-size: 25px;
+      margin-bottom: 80px; } }
 
 @media (min-width: 450px) and (max-width: 767px) {
-  .offcanvas {
-    background-color: #212529; }
-    .offcanvas .offcanvas-header {
-      align-items: start;
-      border-bottom: 1px solid #5e5858; }
-    .offcanvas .logoBlanco {
-      margin-left: 131px; }
-    .offcanvas .lista {
-      margin-top: 60px;
-      justify-content: center; }
-      .offcanvas .lista a {
-        justify-content: center;
-        color: #ffffff;
-        font-size: 22px;
-        margin-top: 80px; } }
+  .logoBlanco {
+    margin-left: 135px; }
+  .lista {
+    justify-content: center; }
+    .lista a {
+      justify-content: center;
+      color: #ffffff;
+      font-size: 22px;
+      margin-top: 80px; } }
 
 @media (min-width: 1024px) {
   .logo {
@@ -396,8 +403,8 @@ header {
       cursor: pointer; }
       .propiedades .ordenarPropiedades img:hover {
         transition-duration: 1.5s;
-        width: 520px;
-        height: 420px;
+        width: 508px;
+        height: 408px;
         box-shadow: -1px -1px 26px rgba(172, 172, 172, 0.6); }
     .propiedades .ordenarPropiedades .descPropiedad {
       width: auto;
@@ -918,6 +925,11 @@ header {
     display: inline-block;
     padding-right: 10px;
     padding-left: 10px; }
+    .redes li img {
+      width: 30px;
+      border-radius: 100%;
+      border: #000000 1px solid;
+      padding: 2.5px; }
 
 @media (max-width: 450px) {
   .textocopy {
@@ -927,12 +939,7 @@ header {
     font-family: 'Roboto', sans-serif;
     color: #000000; }
   .redes {
-    padding: 0px 0px 2px 0px; }
-    .redes li img {
-      width: 30px;
-      border-radius: 100%;
-      border: #000000 2px solid;
-      padding: 2.5px; } }
+    padding: 0px 0px 2px 0px; } }
 
 @media (min-width: 450px) and (max-width: 750px) {
   .textocopy {
@@ -945,11 +952,8 @@ header {
     padding-bottom: auto; }
     footer .redes {
       padding: 0px 0px 2px 0px; }
-      footer .redes li img {
-        width: 45px;
-        border-radius: 100%;
-        border: #000000 2px solid;
-        padding: 2.5px; } }
+      footer .redes img {
+        width: 40px; } }
 
 @media (min-width: 750px) {
   .textocopy {
@@ -962,10 +966,7 @@ header {
     display: flex;
     justify-content: space-evenly; }
     .redes li img {
-      width: 50px;
-      border-radius: 100%;
-      border: #000000 2px solid;
-      padding: 2.5px; } }
+      width: 50px; } }
 
 @media (min-width: 1024px) {
   .textocopy {

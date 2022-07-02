@@ -8,6 +8,13 @@
     left: 0;
     z-index: 1;
 }
+.offcanvas{
+    background-color: #212529;
+    .offcanvas-header{
+        align-items: start;
+        border-bottom: 1px solid #5e5858;
+    }
+}
 .lista{
     display: flex;
     justify-content: end;
@@ -18,40 +25,41 @@
         margin: 0px 30px;
     }
 }
-@media (max-width: 450px){
+@media (max-width: 414px){
     .logoBlanco{
-        width: 65px;
-        margin-left: 92px;
+        width: 70px;
     }
-    .offcanvas{
-        background-color: #212529;
-        .offcanvas-header{
-            align-items: start;
-            border-bottom: 1px solid #5e5858;
-        }
-        .lista{
+    .lista{
+        justify-content: center;
+        margin-top: 90px;
+        a{
             justify-content: center;
-            a{
-                justify-content: center;
-                color: #ffffff;
-                font-size: 15px;
-                margin-top: 60px;
-            }
+            color: #ffffff;
+            font-size: 18px;
+            margin-bottom: 50px;
         }
     }
 }
-@media  (min-width: 450px) and (max-width: 767px){
-    .offcanvas{
-        background-color: #212529;
-        .offcanvas-header{
-            align-items: start;
-            border-bottom: 1px solid #5e5858;
-        }
-        .logoBlanco{
-            margin-left: 131px;
-        }
+@media (min-width: 415px) and (max-width: 450px){
+            .logoBlanco{
+                width: 70px;
+            }
         .lista{
-            margin-top: 60px;
+            justify-content: center;
+            margin-top: 110px;
+            a{
+                justify-content: center;
+                color: #ffffff;
+                font-size: 25px;
+                margin-bottom: 80px;
+            }
+        }
+}
+@media  (min-width: 450px) and (max-width: 767px){
+            .logoBlanco{
+                margin-left: 135px;
+            }
+        .lista{
             justify-content: center;
             a{
                 justify-content: center;
@@ -60,7 +68,6 @@
                 margin-top: 80px;
             }
         }
-    }
 }
 @media  (min-width: 1024px){
     .logo{
