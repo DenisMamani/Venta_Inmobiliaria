@@ -927,9 +927,8 @@ header {
     padding-left: 10px; }
     .redes li img {
       width: 30px;
-      border-radius: 100%;
-      border: #000000 1px solid;
-      padding: 2.5px; }
+      border-radius: 50%;
+      padding: 3px; }
 
 @media (max-width: 450px) {
   .textocopy {
