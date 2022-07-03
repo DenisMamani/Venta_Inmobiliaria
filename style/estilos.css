@@ -167,14 +167,14 @@ header {
     font-family: 'Roboto', sans-serif;
     font-size: 2.5rem;
     text-align: center;
-    animation-name: desplazarsepoco;
+    animation-name: desplazarse;
     animation-duration: 3s; }
     .texto .titulo {
       font-size: 18px; }
     .texto .subtitulo {
       font-size: 16px;
       margin-top: 25px; }
-  @keyframes desplazarsepoco {
+  @keyframes desplazarse {
     0% {
       transform: translateY(-22px); } }
   .ordenarInicio {
@@ -344,7 +344,12 @@ header {
     grid-template-rows: auto auto 1fr auto; }
   .tituloPropiedad h1 {
     font-size: 25px;
-    letter-spacing: 2px; }
+    letter-spacing: 2px;
+    animation-name: desplazarse;
+    animation-duration: 3s; }
+  @keyframes desplazarse {
+    0% {
+      transform: translateY(-45px); } }
   .propiedades {
     grid-template-columns: repeat(auto-fit, 15rem); }
     .propiedades .ordenarPropiedades img {

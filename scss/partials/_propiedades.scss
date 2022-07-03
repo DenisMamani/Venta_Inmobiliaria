@@ -43,6 +43,13 @@
     .tituloPropiedad h1{
         font-size: 25px;
         letter-spacing: 2px;
+        animation-name: desplazarse;
+        animation-duration: 3s;
+        @keyframes desplazarse{
+            0%{
+                 transform: translateY(-45px);
+            }
+            }
     }
     .propiedades{
         grid-template-columns: repeat(auto-fit, 15rem);
