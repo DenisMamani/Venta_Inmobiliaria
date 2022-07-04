@@ -1,11 +1,19 @@
 @import "./base/variables";
 @import "./base/mixins";
 @import "./base/maps";
+/*GENERALES*/
 @import "./partials/generales";
+/*HEADER*/
 @import "./partials/header";
+/*INICIO*/
 @import "./partials/inicio";
+/*PROPIEDADES*/
 @import "./partials/propiedades";
+/*CONTACTO*/
 @import "./partials/contacto";
+/*NOSOTROS*/
 @import "./partials/nosotros";
+/*TASACION*/
 @import "./partials/tasacion";
+/*FOOTER*/
 @import "./partials/footer.scss";
