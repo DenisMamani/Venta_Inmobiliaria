@@ -115,6 +115,7 @@
     }
     .propiedades{
         grid-template-columns: repeat(auto-fit, 30rem);
+        grid-template-rows: 510px 510px;
         gap: 100px;
         margin: 0px 50px 100px;
         .ordenarPropiedades{
