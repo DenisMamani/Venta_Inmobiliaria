@@ -26,12 +26,12 @@
         border-radius: 5px;
         width: 80%;
         .parrafoNosotros{
-            padding: 10px;
+            padding: 5px;
             color: #000000;
             line-height: 25px;
             font-size: 15px;
             font-family: $font-p;
-            font-weight: bolder;
+            font-weight: bold;
         }
     }
     .imgNosotros{
@@ -120,6 +120,7 @@
             width: 650px;
             height: 450px;
             .parrafoNosotros{
+                margin: 10px 0px;
                 font-size: 25px;
                 text-align: center;
                 line-height: 32px;

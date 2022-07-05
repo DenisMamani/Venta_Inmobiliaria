@@ -615,12 +615,12 @@ header {
     border-radius: 5px;
     width: 80%; }
     .ordenarNosotros .caja1 .parrafoNosotros {
-      padding: 10px;
+      padding: 5px;
       color: #000000;
       line-height: 25px;
       font-size: 15px;
       font-family: "Montserrat", sans-serif;
-      font-weight: bolder; }
+      font-weight: bold; }
   .ordenarNosotros .imgNosotros {
     text-align: center; }
     .ordenarNosotros .imgNosotros img {
@@ -699,6 +699,7 @@ header {
       width: 650px;
       height: 450px; }
       .ordenarNosotros .caja1 .parrafoNosotros {
+        margin: 10px 0px;
         font-size: 25px;
         text-align: center;
         line-height: 32px; }
