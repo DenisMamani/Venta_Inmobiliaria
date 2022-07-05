@@ -31,7 +31,16 @@
             background-color: #e7dede;
             border-radius: 0px 0px 5px 5px;
             padding: 4px 6px 8px 5px;
-            width: 350px; 
+            width: 350px;
+             p{
+                border-top: 1px solid #a79f9f;
+                padding-top: 8px;
+                margin-bottom: 0;
+                text-align: center;
+                    b{
+                        font-weight: 600;
+                }
+            }
          }
     }
 }
@@ -102,7 +111,7 @@
             }
             .descPropiedad{
                 text-align: center;
-                width: 550px; 
+                width: 550px;
                 font-size: 18px;
             }
         }
