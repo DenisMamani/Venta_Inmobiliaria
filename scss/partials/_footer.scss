@@ -38,18 +38,13 @@
         .seguinosContainer{
             padding: 10px 0px 5px 0px;
             p{
-                font-size: 15px;
-                margin: 0px 0px 5px 0px;
-                font-family: 'Roboto', sans-serif;
-                font-weight: bolder;
+                @include seguinosEstilos;
             }
             .redes{
                 padding: 0;
                     li{
                         img{
-                            width: 32px;
-                            border-radius: 50%;
-                            padding: 3px;
+                            @include tamañoImg;
                             &:hover{
                                 background-color: #df7450;
                                 transition: 1s;
@@ -62,10 +57,7 @@
         border-top: #a79f9f solid 1px;
         margin-bottom: 10px;
         p{
-            font-size: 15px;
-            margin: 5px 0px;
-            font-family: 'Roboto', sans-serif;
-            font-weight: bolder;
+            @include contactoEstilos;
         }
         .contactoFooter{
             gap: 20px;
@@ -75,9 +67,7 @@
                 width: 72px;
                 border-radius: 5px;
                 img{
-                    width: 32px;
-                    border-radius: 50%;
-                    padding: 3px;
+                    @include tamañoImg;
                 }
                 p{
                     margin: 0;
@@ -109,18 +99,14 @@
         .seguinosContainer{
             padding: 10px 0px 5px 0px;
             p{
-                font-size: 18px;
-                margin: 0px 0px 5px 0px;
-                font-family: 'Roboto', sans-serif;
-                font-weight: bolder;
+                @include seguinosEstilos
             }
             .redes{
                 padding: 0;
                     li{
                         img{
                             width: 38px;
-                            border-radius: 50%;
-                            padding: 3px;
+                            @include tamañoImg;
                             &:hover{
                                 background-color: #df7450;
                                 transition: 1s;
@@ -135,9 +121,7 @@
         margin-bottom: 10px;
         p{
             font-size: 18px;
-            margin: 5px 0px;
-            font-family: 'Roboto', sans-serif;
-            font-weight: bolder;
+            @include contactoEstilos;
         }
         .contactoFooter{
             margin: 0;
@@ -147,8 +131,7 @@
                 border-radius: 5px;
                 img{
                     width: 38px;
-                    border-radius: 50%;
-                    padding: 3px;
+                    @include tamañoImg;
                 }
                 p{
                     margin: 0;
@@ -196,8 +179,7 @@
                     border-radius: 5px;
                 img{
                     width: 38px;
-                    border-radius: 50%;
-                    padding: 3px;
+                    @include tamañoImg;
                 }
                 &:hover{
                     background-color: #df7450;
@@ -224,7 +206,7 @@
                     margin: 0px 7px;
                     img{
                         width:35px;
-                        border-radius: 50%;
+                        @include tamañoImg;
                     }
                     p{
                         border-bottom: 0;

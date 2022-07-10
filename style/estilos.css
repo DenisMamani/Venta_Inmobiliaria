@@ -1011,7 +1011,7 @@ header {
   .ordenarFooter .seguinosContainer {
     padding: 10px 0px 5px 0px; }
     .ordenarFooter .seguinosContainer p {
-      font-size: 18px;
+      font-size: 15px;
       margin: 0px 0px 5px 0px;
       font-family: 'Roboto', sans-serif;
       font-weight: bolder; }
@@ -1019,6 +1019,7 @@ header {
       padding: 0; }
       .ordenarFooter .seguinosContainer .redes li img {
         width: 38px;
+        width: 32px;
         border-radius: 50%;
         padding: 3px; }
         .ordenarFooter .seguinosContainer .redes li img:hover {
@@ -1029,6 +1030,7 @@ header {
     margin-bottom: 10px; }
     .ordenarFooter .contactoContainer p {
       font-size: 18px;
+      font-size: 15px;
       margin: 5px 0px;
       font-family: 'Roboto', sans-serif;
       font-weight: bolder; }
@@ -1040,6 +1042,7 @@ header {
         border-radius: 5px; }
         .ordenarFooter .contactoContainer .contactoFooter li img {
           width: 38px;
+          width: 32px;
           border-radius: 50%;
           padding: 3px; }
         .ordenarFooter .contactoContainer .contactoFooter li p {
@@ -1078,6 +1081,7 @@ header {
         border-radius: 5px; }
         .ordenarFooter .seguinosContainer .redes li img {
           width: 38px;
+          width: 32px;
           border-radius: 50%;
           padding: 3px; }
         .ordenarFooter .seguinosContainer .redes li:hover {
@@ -1099,7 +1103,9 @@ header {
         margin: 0px 7px; }
         .ordenarFooter .contactoContainer .contactoFooter li img {
           width: 35px;
-          border-radius: 50%; }
+          width: 32px;
+          border-radius: 50%;
+          padding: 3px; }
         .ordenarFooter .contactoContainer .contactoFooter li p {
           border-bottom: 0;
           margin: 0;
